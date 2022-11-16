@@ -1,0 +1,131 @@
+
+body{
+    background-color: #38419F;
+    overflow-x: hidden;
+}
+.cloud{
+width: 100%;
+opacity: 0.8;
+position: absolute;
+right: -100%;
+animation: cloud 10s linear 1;
+
+}
+@keyframes cloud 
+{
+  from
+  {
+      right: -100%;
+  }
+  to
+  { 
+    right: 100%;
+
+  }
+}
+.plane{
+    width: 20%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+   animation: plane 10s ease-in 1;
+}
+@keyframes plane 
+{
+   0%{
+     bottom: 0;
+     right: 0;
+     transform: rotate(0);
+   }
+   80%{
+       bottom: 80%;
+       right: 80%;
+       transform: rotate(0);
+   }
+   100%{
+        right: 70%;
+        bottom: 0;
+        transform: rotate(-90deg);
+   }
+    
+}
+.thunder{
+    width: 30%;
+    position: absolute;
+    top: -6%;
+    opacity: 0;
+    animation: thunder 0.5s linear 10 infinite;
+}
+@keyframes thunder  
+{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+.boom{
+    width: 20%;
+    position: absolute;
+    bottom: -10%;
+    left: 120px;
+    animation: boom 2s linear 10s 1;
+    opacity: 0;
+}
+@keyframes boom
+{    
+    from
+    {
+       opacity: 0 ;
+    }
+    to
+    {  
+        opacity: 1;
+
+    }
+   
+    
+}
+.gunes{
+    position: absolute;
+    width: 40%;
+    bottom: 60%;
+    right: 40%;
+    
+    animation: gunes 7s linear 11s 1;
+    opacity: 0;
+
+}
+@keyframes gunes {
+    from
+    {
+        opacity: 0;
+
+    }
+    to{
+        opacity: 1;
+        transform: rotate(1080deg);
+    }
+}
+.human{
+    position: absolute;
+    width: 20%;
+    bottom: -10%;
+    left: 120px;
+    animation: human 12s ease-in 1;
+    opacity: 0;
+}
+@keyframes human {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
